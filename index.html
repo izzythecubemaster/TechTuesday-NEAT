@@ -3,34 +3,21 @@
 <head>
     <title>Tech Tuesday: NEAT</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
     <h1 class="text-center">Tech Tuesday: NEAT</h1>
     <h2 class="text-center">NeuroEvolution of Augmenting Topologies</h2>
-    <h3 class="text-center">Algorithm for evolving artificial Neural Networks</h3>
-    <div class="row text-center">
-        <h3 class="col-md-6">Trying to guess the word:</h3>
-        <p class="col-md-6" id="word">Tech Tuesday</p>
-        <h3 class="col-md-6">Worker #1:</h3>
-        <p class="col-md-6" id="worker1">Not Working</p>
-        <h3 class="col-md-6">Worker #2:</h3>
-        <p class="col-md-6" id="worker2">Not Working</p>
-        <h3 class="col-md-6">Worker #3:</h3>
-        <p class="col-md-6" id="worker3">Not Working</p>
-        <h3 class="col-md-6">Worker #4:</h3>
-        <p class="col-md-6" id="worker4">Not Working</p>
-        <h3 class="col-md-6">Worker #5:</h3>
-        <p class="col-md-6" id="worker5">Not Working</p>
-        <h3 class="col-md-6">Worker #6:</h3>
-        <p class="col-md-6" id="worker6">Not Working</p>
-        <h3 class="col-md-6">Worker #7:</h3>
-        <p class="col-md-6" id="worker7">Not Working</p>
-        <h3 class="col-md-6">Worker #8:</h3>
-        <p class="col-md-6" id="worker8">Not Working</p>
+    <h3 class="text-center">High efficiency method for evolving artificial Neural Networks</h3>
+    <div id="field" class="text-center">
+        <canvas id="asteroids"></canvas>
+    </div>
+    <div class="text-center">
+        <button type="button" class="btn btn-primary" onclick="speed(60)">Real-time</button>
+        <button type="button" class="btn btn-danger" onclick="speed(0)">Unlimited</button>
     </div>
     <script src="Neuroevolution.js"></script>
-    <script src="WordGuesser.js"></script>
+    <script src="game.js"></script>
 </body>
 </html>
